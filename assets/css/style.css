@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
-/* apply styles to <header> */
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Start HEADER styles */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -42,12 +47,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/* End HEADER styles */
 
-body {
-    color: #39a6b2;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/*Start FOOTER styles */
 footer {
     background: #fce138;
     width: 100%;
@@ -71,16 +73,16 @@ footer div {
 footer a {
     color: #024e76;
 }
+/* End FOOTER styles */
 
-section {
-    padding: 60px;
-  }
-
-  /* Hero Style Start */
+  /* Start HERO styles */
   .hero {
       background-image: url("../images/hero-bg.jpg");
       background-size: cover;
       background-position: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
   }
 
   .hero-cta {
@@ -88,24 +90,21 @@ section {
       text-align: right;
       margin: 3.5%;
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.3;
   }
 
-  .hero-cta2 {
+  .hero-cta h2 {
       font-style: italic;
       font-size: 55px;
       color: #fce138;
   }
 
   .hero-form {
-    border: solid 3px #024e76;
+    border: 3px solid #024e76;
       background-color: #fce138;
       padding: 20px;
       color: #024e76;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
       width: 40%;
       margin: 3.5%;
   }
@@ -122,7 +121,7 @@ section {
   .form-input {
       border: 1px solid #024e76;
       display: block;
-      padding: 7px 5px;
+      padding: 7px 15px;
       font-size: 16px;
       color: #024e76;
       width: 100%;
@@ -140,8 +139,9 @@ section {
       padding: 10px 20px;
       font-size: 16px;
   }
-  /* HERO STYLES END */
+  /* End HERO styles */
 
+  /* Start STEP styles */
   .intro p {
       margin: 0 auto;
       line-height: 1.7;
@@ -151,34 +151,66 @@ section {
       text-align: center;
   }
 
-  .steps {
-      background: #fce138;
+    .steps {
+    background: #fce138;
+}
+
+  .step {
+      margin: 50px auto;
+      padding-bottom: 50px;
+      width: 80%;
+      border-bottom: 1px solid #39a6b2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
   }
 
-  .steps div {
-      margin-bottom: 80px;
+  .step-img {
+      flex: 1 12%;
+      margin-right: 20px;
   }
 
-  .steps img {
-      width: 15%;
-      margin: 10px 0;
+  .step-img img {
+      max-width: 100%;
   }
 
-  .steps h3 {
+  .step h3 {
       color: #024e76;
       font-size: 46px;
-      margin-top: 10px;
+      flex: 1 30%;
   }
 
-  .steps p {
+  .step-text {
+      flex: 12;
+  }
+
+  .step-text p {
       color: #39a6b2;
-      font-size: 23px;
+      font-size: 18px;
   }
 
-  .steps span {
-      font-size: 38px;
+  .step-text h4 {
+      font-size: 26px;
+      line-height: 1.5;
+      color: #024e76;
   }
 
+  .step-info {
+      flex: 2 70%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  /* End STEP styles */
+
+  /* Style ALL SECTION tags */
+  section {
+    padding: 60px;
+  }
+  /* End ALL SECTION style */
+
+  /* Start SECTION TITLES styles */
   .section-title {
       font-size: 55px;
       color: #024e76;
@@ -196,7 +228,9 @@ section {
   .secondary-border {
       border-color: #39a6b2;
   }
+  /* End SECTION TITLES styles */
 
+  /* Start TRAINERS styles */
   .trainers {
   }
 
@@ -219,14 +253,6 @@ section {
       width: 65%;
   }
 
-  .text-left {
-      text-align: left;
-  }
-
-  .text-right {
-      text-align: right;
-  }
-
   .trainer-bio h3 {
       font-size: 32px;
       margin-bottom: 8px;
@@ -242,6 +268,7 @@ section {
       font-size: 17px;
       line-height: 1.3;
   }
+  /* End TRAINERS styles */
 
   /* REACH OUT STYLES START */
   .reach-out {
@@ -287,6 +314,14 @@ section {
   }
 
   /* REACH OUT STYLES END */
+
+  .text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
 
   .flex-row {
       display: flex;
